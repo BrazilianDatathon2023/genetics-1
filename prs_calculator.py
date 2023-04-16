@@ -79,7 +79,7 @@ def process_line(line, vcf_names, risk_alleles_weight, index_chr, index_pos, prs
         return add_sample_effect(sample_effects, prs_sum)
 
     except KeyError:
-        print(f"Variant {locus} present in VCF is not present in PRS file")
+        #print(f"Variant {locus} present in VCF is not present in PRS file")
 
         return prs_sum
 
